@@ -11,5 +11,8 @@ for(let i = 0; i < column * row; i++) {
     div.classList.toggle("grid-box");
     div.style.width = `${gridBoxWidth}px`;
     div.style.height = `${gridBoxHeight}px`;
+    div.addEventListener("mouseover", (e) => {
+        e.target.style.background = "blue";
+    })
     container.appendChild(div);
 }
